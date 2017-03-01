@@ -5,5 +5,5 @@ def call(String name = 'hans') {
     // Any valid steps can be called from this code, just like in other
     // Scripted Pipeline
     def print = new Print()
-    print.str ("Hello, ${name}")
+    print.line ("Hello, ${name}")
 }
