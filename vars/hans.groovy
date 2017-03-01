@@ -1,9 +1,9 @@
-import nl.kadaster.jenkins.system.Print ; 
+import nl.kadaster.jenkins.system.SerializablePrint
 
 
 def call(String name = 'hans') {
     // Any valid steps can be called from this code, just like in other
     // Scripted Pipeline
-    def print = new Print()
-    print.line ("Hello, ${name}")
+    def print = new SerializablePrint()
+    print.line ("${name}")
 }
