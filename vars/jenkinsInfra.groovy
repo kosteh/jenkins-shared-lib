@@ -4,7 +4,7 @@ class jenkinsInfra implements Serializable {
         teams
     }
     
-    def printTeams () {
-        echo "${teams}"
+    def printTeams (steps) {
+        steps.echo "${teams}"
     }
 }
