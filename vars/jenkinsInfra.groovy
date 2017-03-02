@@ -3,4 +3,8 @@ class jenkinsInfra implements Serializable {
     def getTeams(value) {
         teams
     }
+    
+    def printTeams () {
+        echo "${teams}"
+    }
 }
